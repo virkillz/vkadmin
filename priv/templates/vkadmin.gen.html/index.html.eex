@@ -28,7 +28,9 @@
                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                 <div class="heading-elements">
                     <ul class="list-inline mb-0">
-                        <li><a href="<%%= <%= @schema.route_helper %>_path(@conn, :new) %>"><button type="button" class="btn btn-glow btn-round btn-bg-gradient-x-red-pink">Create New <%= schema.human_singular %></button></a></li>
+                        <li>
+                          <%%= link "New <%= schema.human_singular %>", to: <%= schema.route_helper %>_path(@conn, :new), class: "btn btn-glow btn-round btn-bg-gradient-x-red-pink" %>
+                        </li>
                     </ul>
                 </div>
             </div>

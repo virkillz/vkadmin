@@ -1,18 +1,3 @@
-<div class="row">
-    <div class="col-sm-12">
-        <h4 class="pull-left page-title">Edit <%= schema.human_singular %></h4>
-        <ol class="breadcrumb pull-right">
-            <li><a href="/">Vk Admin</a></li>
-            <li><a href="/#"><%= schema.human_singular %></a></li>
-            <li class="active">Edit</li>
-        </ol>
-    </div>
-</div>
-
-
-
-
-
 
        <div class="content-header row">
           <div class="content-header-left col-md-4 col-12 mb-2">
@@ -42,9 +27,6 @@
                 <h4 class="card-title">Edit <%= schema.human_singular %></h4>
                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                 <div class="heading-elements">
-                    <ul class="list-inline mb-0">
-                        <li><a href="<%%= <%= schema.route_helper %>_path(@conn, :new, @<%= schema.singular %>) %>">"><button type="button" class="btn btn-glow btn-round btn-bg-gradient-x-red-pink">Create New <%= schema.human_singular %></button></a></li>
-                    </ul>
                 </div>
             </div>
             <div class="card-content collapse show">
